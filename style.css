@@ -1,0 +1,127 @@
+/* Body Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://i.pinimg.com/564x/ac/54/a1/ac54a128942c750799c2c1fe144d2467.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* To-Do List Container */
+#todo-container {
+  width: 500px;
+  margin: 50px auto;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+#todo-container h1{
+color: #2C4E80;
+}
+
+/* To-Do Form */
+#todo-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* New Task Input */
+#new-task {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Softer corners */
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out; /* Smooth border transition */
+}
+
+#new-task:focus {
+  border-color:#2C4E80; 
+}
+
+/* Add Task Button */
+#add-task-btn {
+  padding: 10px 20px;
+  background-color:#2C4E80; 
+  margin-left: 2%;
+  color:white;
+  border: none;
+  border-radius: 5px; /* Softer corners */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out; 
+}
+
+#add-task-btn:hover {
+  background-color:#2C4E80; 
+}
+
+/* Task List */
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#task-list li{
+  list-style: none;
+  font-size: 18px;
+  padding: 15px 8px 15px 50px; 
+  margin-bottom:5%;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 5px; 
+  background-color: #fff; 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out; 
+position:relative;
+}
+#task-list li::before{
+  content: '';
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-image: url("images/unchecked.png");
+  background-size: cover;
+  background-position: center;
+top: 12px;
+left: 8px;
+}
+
+#task-list li:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+#task-list li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+#task-list li.checked::before{
+  background-image: url("images/check.png");
+}
+
+/* Task Label */
+
+#task-list li button , #task-list li span{
+  position:absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 3%;
+  background: none;
+  font-size: 22px;
+  outline: none; 
+  text-decoration: none;
+ 
+}
+#task-list li span{
+margin-right: 40px;
+text-align: center;
+font-size: 28px;
+}
+
+
