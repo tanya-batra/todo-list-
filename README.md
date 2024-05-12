@@ -1,7 +1,8 @@
+#Todo-List
 name:Tanya Batra
 id:COD7691
 domain:web development
-duration:4 WEEK
+duration:5th May 2024 to 5th june 2024
 mentor : sravani gouni
 description: 
 A to-do list is a compact tool for organizing tasks and priorities, aiding productivity. It presents a sequential list of actionable items, often with checkboxes for completion tracking. Users can categorize tasks by urgency, importance, or project, ensuring efficient time management.
