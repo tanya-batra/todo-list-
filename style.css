@@ -123,5 +123,25 @@ margin-right: 40px;
 text-align: center;
 font-size: 28px;
 }
+@media screen and (max-width: 600px) {
+  #todo-container {
+    width: 80%; /* Adjusted for smaller screens */
+  }
+
+  #todo-form {
+    align-items: center; /* Centered for smaller screens */
+  }
+
+  #new-task {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+@media screen and (max-width: 910px) {
+
+  body {
+    background-image: none;
+    background-color: #AD88C6;
+  }
+}
 
 
